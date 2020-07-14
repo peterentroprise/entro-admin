@@ -34,14 +34,13 @@ import RemoveFromQueueOutlinedIcon from "@material-ui/icons/RemoveFromQueueOutli
 import customTheme from "../components/theme"
 
 const config = {
-  apiKey: "AIzaSyBWp-Akak-fGxdpjaUvInSOCpMck_16SAA",
-  authDomain: "entroprise-production.firebaseapp.com",
-  databaseURL: "https://entroprise-production.firebaseio.com",
-  projectId: "entroprise-production",
-  storageBucket: "entroprise-production.appspot.com",
-  messagingSenderId: "22266004444",
-  appId: "1:22266004444:web:3219338e78c23d1e370519",
-  measurementId: "G-R5YR48J1QY",
+  apiKey: "AIzaSyCUa-xU01cPj6_l4hodhcACCUb0gfGeJZk",
+  authDomain: "entro-production.firebaseapp.com",
+  databaseURL: "https://entro-production.firebaseio.com",
+  projectId: "entro-production",
+  storageBucket: "entro-production.appspot.com",
+  messagingSenderId: "881406289911",
+  appId: "1:881406289911:web:d0f683ae03a037230330f2",
 }
 
 const options = {
