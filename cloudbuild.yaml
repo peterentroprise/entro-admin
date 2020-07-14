@@ -11,5 +11,5 @@ steps:
         "deploy",
         "--project",
         "$PROJECT_ID",
-        "--only hosting:entro-admin-production",
+        "--only=hosting:entro-admin-production",
       ]
