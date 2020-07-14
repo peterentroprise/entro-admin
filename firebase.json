@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "target": "entro-admin-production",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

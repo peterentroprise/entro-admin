@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "entroprise-production"
+  },
+  "targets": {
+    "entroprise-production": {
+      "hosting": {
+        "entroprise-admin": [
+          "entroprise-admin"
+        ]
+      }
+    }
+  }
+}
