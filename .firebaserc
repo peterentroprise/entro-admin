@@ -5,8 +5,8 @@
   "targets": {
     "entroprise-production": {
       "hosting": {
-        "entroprise-admin": [
-          "entroprise-admin"
+        "entro-admin-production": [
+          "entro-admin-production"
         ]
       }
     }
