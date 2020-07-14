@@ -1,9 +1,9 @@
 {
   "projects": {
-    "default": "entroprise-production"
+    "default": "entro-production"
   },
   "targets": {
-    "entroprise-production": {
+    "entro-production": {
       "hosting": {
         "entro-admin-production": [
           "entro-admin-production"
