@@ -23,15 +23,20 @@ import {
   ArrayInput,
   SimpleFormIterator,
   NumberField,
+  SingleFieldList,
+  ReferenceManyField,
   ReferenceField,
-  ReferenceInput,
+  ChipField,
+  SelectArrayInput,
+  ReferenceArrayInput,
+  ReferenceArrayField,
 } from "react-admin"
 import RichTextInput from "ra-input-rich-text"
 
-export const AnswerList = props => (
+export const ItemList = props => (
   <List {...props}>
     <Datagrid>
-      <TextField source="answer" />
+      <TextField source="question" />
       <ShowButton label="View" />
       <EditButton label="Edit" />
       <DeleteButton label="Delete" redirect={false} />
@@ -39,49 +44,34 @@ export const AnswerList = props => (
   </List>
 )
 
-export const AnswerShow = props => (
+export const ItemShow = props => (
   <Show {...props}>
     <SimpleShowLayout>
       <TextField source="id" />
+      <TextField source="question" />
       <TextField source="answer" />
-      <ReferenceField
-        label="Question"
-        source="question_id"
-        reference="questions"
-      >
-        <TextField source="question" />
-      </ReferenceField>
+      <TextField source="content" />
     </SimpleShowLayout>
   </Show>
 )
 
-export const AnswerCreate = props => (
+export const ItemCreate = props => (
   <Create {...props}>
     <SimpleForm>
+      <TextInput source="question" />
       <TextInput source="answer" />
-      <ReferenceInput
-        label="Question"
-        source="question_id"
-        reference="questions"
-      >
-        <SelectInput optionText="question" />
-      </ReferenceInput>
+      <TextInput source="content" />
     </SimpleForm>
   </Create>
 )
 
-export const AnswerEdit = props => (
+export const ItemEdit = props => (
   <Edit {...props}>
     <SimpleForm warnWhenUnsavedChanges redirect={false}>
       <TextInput source="id" options={{ disabled: true }} />
+      <TextInput source="question" />
       <TextInput source="answer" />
-      <ReferenceInput
-        label="Question"
-        source="question_id"
-        reference="questions"
-      >
-        <SelectInput optionText="name" />
-      </ReferenceInput>
+      <TextInput source="content" />
     </SimpleForm>
   </Edit>
 )

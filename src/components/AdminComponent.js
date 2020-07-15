@@ -11,21 +11,7 @@ import hasuraDataProvider from "ra-data-hasura"
 
 import CustomLoginPage from "./CustomLoginPage"
 
-import {
-  QuestionList,
-  QuestionShow,
-  QuestionCreate,
-  QuestionEdit,
-} from "./question"
-
-import { AnswerList, AnswerShow, AnswerCreate, AnswerEdit } from "./answer"
-
-import {
-  CollectionList,
-  CollectionShow,
-  CollectionCreate,
-  CollectionEdit,
-} from "./collection"
+import { ItemList, ItemShow, ItemCreate, ItemEdit } from "./item"
 
 import FeaturedPlayListOutlinedIcon from "@material-ui/icons/FeaturedPlayListOutlined"
 import LibraryBooksOutlinedIcon from "@material-ui/icons/LibraryBooksOutlined"
@@ -64,28 +50,12 @@ const AdminComponent = () => (
     authProvider={authProvider}
   >
     <Resource
-      name="collections"
+      name="item"
       icon={LibraryBooksOutlinedIcon}
-      list={CollectionList}
-      show={CollectionShow}
-      create={CollectionCreate}
-      edit={CollectionEdit}
-    />
-    <Resource
-      name="questions"
-      icon={RemoveFromQueueOutlinedIcon}
-      list={QuestionList}
-      show={QuestionShow}
-      create={QuestionCreate}
-      edit={QuestionEdit}
-    />
-    <Resource
-      name="answers"
-      icon={FeaturedPlayListOutlinedIcon}
-      list={AnswerList}
-      show={AnswerShow}
-      create={AnswerCreate}
-      edit={AnswerEdit}
+      list={ItemList}
+      show={ItemShow}
+      create={ItemCreate}
+      edit={ItemEdit}
     />
   </Admin>
 )
